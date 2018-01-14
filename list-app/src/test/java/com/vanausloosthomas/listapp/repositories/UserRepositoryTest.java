@@ -1,6 +1,6 @@
 package com.vanausloosthomas.listapp.repositories;
 
-import com.vanausloosthomas.listapp.IntegrationTest;
+import com.vanausloosthomas.listapp.AbstractIntegrationTest;
 import com.vanausloosthomas.listapp.users.User;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
@@ -9,7 +9,7 @@ import javax.inject.Inject;
 
 import static com.vanausloosthomas.listapp.users.User.UserBuilder.userBuilder;
 
-public class UserRepositoryTest extends IntegrationTest {
+public class UserRepositoryTest extends AbstractIntegrationTest {
 
     @Inject
     private UserRepository userRepository;
